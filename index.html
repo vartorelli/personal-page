@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facundo Vartorelli</title>
+    <link rel="stylesheet" type="text/CSS" href="./estilo.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre Mi</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyect">Proyectos</a>
+      <a href="#mensaje">Mensaje</a>
+    </header>
+    <div class="inicio">
+      <img src="" alt="" />
+    </div>
+    <div class="present" id="sobre-mi">
+      <h2 id="name">Facundo Vartorelli</h2>
+      <p>
+        Buenas, mi nombre es Facundo Vartorelli, soy programador autodidacta
+        para Front-end hasta ahora no llego ni a Junior pero algun dia lograre
+        grandes objetivos. Tengo facilidad para el aprendizaje y me adapto
+        rapido a nuevos desafios, siempre intento resolver los problemas de la
+        manera mas eficaz.
+      </p>
+    </div>
+    <h3 class="titulo" id="habilidades">Mis habilidades y conocimientos</h3>
+    <section class="habilidad">
+      <div class="hability">
+        <a
+          href="https://developer.mozilla.org/es/docs/Web/HTML"
+          target="_blank"
+          aria-label="HTML information"></a>
+        <img src="./assets/html.svg" alt="HTML" />
+        <strong>HTML</strong>
+      </div>
+      <div class="hability">
+        <a
+          href="https://developer.mozilla.org/es/docs/Web/CSS"
+          target="_blank"
+          aria-label="CSS information"></a>
+        <img src="./assets/css.svg" alt="CSS" />
+        <strong>CSS</strong>
+      </div>
+      <div class="hability">
+        <a
+          href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+          target="_blank"
+          aria-label="JavaScript information"></a>
+        <img src="./assets/javascript.svg" alt="JavaScript" />
+        <strong>JavaScript</strong>
+      </div>
+      <div class="hability">
+        <a
+          href="https://es.react.dev/"
+          target="_blank"
+          aria-label="React Official Page"></a>
+        <img src="./assets/react.svg" alt="React" />
+        <strong>React</strong>
+      </div>
+      <div class="hability">
+        <a
+          href="https://github.com/"
+          target="_blank"
+          aria-label="GitHub Official Page"></a>
+        <img src="./assets/github.svg" alt="GitHub" />
+        <strong>GitHub</strong>
+      </div>
+      <div class="hability">
+        <a
+          href="https://git-scm.com/"
+          target="_blank"
+          aria-label="GitHub Official Page"></a>
+        <img src="./assets/git.png" alt="Git" />
+        <strong>Git</strong>
+      </div>
+      <div class="hability">
+        <a
+          href="https://nodejs.org/en/"
+          target="_blank"
+          aria-label="GitHub Official Page"></a>
+        <img src="./assets/node-js.svg" alt="Node" />
+        <strong>Node</strong>
+      </div>
+      <div>
+        <img src="./assets/express.svg" alt="Express" />
+        <strong>Express</strong>
+      </div>
+    </section>
+    <h4 class="titulo">Proximamente</h4>
+    <section class="habilidad">
+      <div>
+        <img src="./assets/angular.svg" alt="Angular" />
+        <strong>Angular</strong>
+      </div>
+      <div>
+        <img src="./assets/react.svg" alt="React Native" />
+        <strong>React Native</strong>
+      </div>
+    </section>
+    <section class="proyect">
+      <h3 class="titulo" id="proyect">Proyectos Personales</h3>
+      <div class="list-proyect">
+        <a class="card-proyect" href="https://pulpa-studios.onrender.com/">
+          <h4>Pulpa Studios</h4>
+          <img src="assets/pulpa-studios.png" alt="Pagina de Pulpa Studios" width="300px">
+        </a>
+        <a class="card-proyect" href="https://news-portal-70oh.onrender.com/">
+          <h4>Portal Noticias</h4>
+          <img src="assets/news-portal.png" alt="Pagina de Noticias" width="300px">
+        </a>
+      </div>
+    </section>
+    <section id="mensaje">
+      <form
+        class="contact-form"
+        id="contact-form"
+        target="_blank"
+        action="submit"
+        method="POST">
+        <legend class="titulo">Envia tu comentario</legend>
+        <input
+          id="form-name"
+          type="text"
+          name="name"
+          placeholder="Escribe tu nombre"
+          title="Nombre sólo acepta letras y espacios en blanco"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+          required />
+        <input
+          id="form-email"
+          type="email"
+          name="email"
+          placeholder="Escribe tu email"
+          title="Email incorrecto"
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+          required />
+        <input
+          id="form-subject"
+          type="text"
+          name="subject"
+          placeholder="Asunto a tratar"
+          title="El asunto es requerido"
+          required />
+        <textarea
+          id="form-message"
+          type="text"
+          name="mensaje"
+          cols="50"
+          rows="5"
+          placeholder="Escribe el mensaje.."
+          data-pattern="^.{1,255}$"
+          title="Tu comentario no debe exceder los 255 comentarios"
+          required></textarea>
+        <input type="submit" value="Enviar" />
+        <div class="contact-form-loader none">
+          <img src="assets/loader.svg" alt="Cargando" />
+        </div>
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados</p>
+        </div>
+      </form>
+    </section>
+    <footer></footer>
+    <script src="/index.js" type="module"></script>
+    <script type="module" src="event/form_submit.js"></script>
+  </body>
+</html>
